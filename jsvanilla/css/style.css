@@ -23,6 +23,7 @@ body {
   min-height: 400px;
   background-color: #1d1e33;
   padding: 2rem;
+  border-radius: 10px;
 }
 
 /* IMC Form */
@@ -53,6 +54,7 @@ body {
 
 .form-control input {
   padding: 1rem 0.5rem;
+  border-radius: 5px;
 }
 
 .action-control {
@@ -65,8 +67,9 @@ body {
 button {
   text-transform: uppercase;
   padding: 1rem 1.5rem;
-  background-color: #f44236;
+  background-color: #fc6500;
   border: none;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   opacity: 0.9;
@@ -75,4 +78,81 @@ button {
 
 button:hover {
   opacity: 1;
+  font-weight: bold;
+}
+
+#clear-btn {
+  background-color: #f44236;
+}
+
+/* Table */
+
+#result-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#imc-number {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+#imc-info {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+#result-container h3 {
+  margin-top: 1rem;
+  color: #dfdfdf;
+}
+
+.imc-table {
+  margin: 1.5rem 0;
+  font-size: 0.8rem;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.table-header,
+.table-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.table-header h4,
+.table-data p {
+  flex: 1;
+}
+
+.table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+  max-width: 80px;
+}
+
+#back-btn {
+  align-self: center;
+}
+
+.good {
+  color: #12db34;
+}
+
+.low {
+  color: #dbce12;
+}
+
+.medium {
+  color: #db6212;
+}
+
+.high {
+  color: #db1912;
 }
