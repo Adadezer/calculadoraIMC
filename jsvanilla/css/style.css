@@ -67,7 +67,7 @@ body {
 button {
   text-transform: uppercase;
   padding: 1rem 1.5rem;
-  background-color: #f44236;
+  background-color: #fc6500;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -78,4 +78,9 @@ button {
 
 button:hover {
   opacity: 1;
+  font-weight: bold;
+}
+
+#clear-btn {
+  background-color: #f44236;
 }
