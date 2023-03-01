@@ -75,11 +75,36 @@ function cleanInputs() {
   weightInput.value = ''
 }
 
+function validDigits(text) {
+  // Substitui tudo que não for número ou vírgula por vazio
+  text = text.replace(/[^0-9,]/g, '');
+
+  // Verifica se há mais de uma vírgula
+  let hasMultipleCommas = (text.match(/,/g) || []).length > 1;
+
+  // Verifica se há casas decimais depois da vírgula
+  let hasDecimalPlaces = text.indexOf(',') !== -1 && text.split(',')[1].length > 2;
+
+  if (hasMultipleCommas || hasDecimalPlaces) {
+    // Retorna vazio se houver mais de uma vírgula ou mais de duas casas decimais
+    return '';
+  }
+
+  return text;
+}
+
 // Inicialização
 
 createTable(data);
 
 // Eventos
+[heightInput, weightInput].forEach((el) => {
+  el.addEventListener('input', (e) => {
+    const updatedValue = validDigits(e.target.value);
+
+    e.target.value = updatedValue;
+  });
+});
 
 clearBtn.addEventListener('click', (e) => {
   e.preventDefault();
