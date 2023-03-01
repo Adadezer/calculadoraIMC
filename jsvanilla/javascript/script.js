@@ -93,6 +93,11 @@ function validDigits(text) {
   return text;
 }
 
+function calcImc(height, weight) {
+  const imc = (weight / (height * height)).toFixed(1);
+  return imc;
+}
+
 // Inicialização
 
 createTable(data);
@@ -104,6 +109,19 @@ createTable(data);
 
     e.target.value = updatedValue;
   });
+});
+
+calcBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const weight = +weightInput.value.replace(',', '.');
+  const height = +heightInput.value.replace(',', '.');
+
+  if (!weight || !height) return;
+
+  const imc = calcImc(height, weight);
+
+  console.log(imc);
 });
 
 clearBtn.addEventListener('click', (e) => {
