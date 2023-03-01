@@ -1,6 +1,8 @@
+Calculadora de IMC
+Calculadora de IMC
 # ⚖️ O que é a aplicação
 
-**Este projeto é uma calculadora de IMC**
+<h4>**Este projeto é uma calculadora de IMC**</h4>
 O IMC (índice de massa corporal) é uma medida internacional usada para calcular se uma pessoa está no peso ideal ou não.
   
 
@@ -14,10 +16,14 @@ Na tela inicial é pedido para que o usuário digite sua altura e seu peso atual
 Nesse projeto, foram utilizados as tecnologias:
  -  HTML 
  -  CSS  
- -  JavaScript
+ -  JavaScript 
+ 
+# 🖥️ Aplicação
+<a href="https://calculadora-imc-tawny.vercel.app/">Clique aqui para acessar a calculadora de IMC</a>
 
 # 🤷🏽‍♀️ Como Instalar e Utilizar
-1- Abra o terminal, clone o projeto e entre em sua pasta:
+1- Caso queira rodar o projeto localmente.
+Abra o terminal, clone o projeto e entre em sua pasta:
 
  - `git clone git@github.com:Adadezer/calculadoraIMC.git` 
  - ou `git clone https://github.com/Adadezer/calculadoraIMC.git`
