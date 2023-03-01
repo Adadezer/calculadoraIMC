@@ -1,8 +1,6 @@
-Calculadora de IMC
-Calculadora de IMC
 # ⚖️ O que é a aplicação
 
-<h4>**Este projeto é uma calculadora de IMC**</h4>
+<h4>Este projeto é uma calculadora de IMC</h4>
 O IMC (índice de massa corporal) é uma medida internacional usada para calcular se uma pessoa está no peso ideal ou não.
   
 
