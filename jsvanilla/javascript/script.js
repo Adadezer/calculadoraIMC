@@ -42,7 +42,7 @@ const data = [
 const imcTable = document.querySelector('#imc-table');
 
 const heightInput = document.querySelector('#height');
-const wightInput = document.querySelector('#weight');
+const weightInput = document.querySelector('#weight');
 const calcBtn = document.querySelector('#calc-btn');
 const clearBtn = document.querySelector('#clear-btn');
 
@@ -70,7 +70,18 @@ function createTable(data) {
   });
 }
 
+function cleanInputs() {
+  heightInput.value = '';
+  weightInput.value = ''
+}
+
 // Inicialização
 
 createTable(data);
+
 // Eventos
+
+clearBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  cleanInputs();
+})
