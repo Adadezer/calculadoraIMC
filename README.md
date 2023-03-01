@@ -17,6 +17,8 @@ Nesse projeto, foram utilizados as tecnologias:
  -  JavaScript 
  
 # 🖥️ Aplicação
+![gifCalculadoraIMC](https://user-images.githubusercontent.com/58038784/222256773-21889eb4-3ab7-49d3-88e2-625dc1984172.gif)
+
 <a href="https://calculadora-imc-tawny.vercel.app/">Clique aqui para acessar a calculadora de IMC</a>
 
 # 🤷🏽‍♀️ Como Instalar e Utilizar
